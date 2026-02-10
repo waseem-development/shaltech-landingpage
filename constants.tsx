@@ -91,5 +91,5 @@ export const TECH_STACK = [
 export const CONTACT_INFO = {
   whatsapp1: '+92 348 2035277',
   whatsapp2: '+92 341 2011877',
-  email: 'shaltechquetta@gmail.com'
+  email: 'shaltechdev@gmail.com'
 };

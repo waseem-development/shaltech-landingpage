@@ -37,27 +37,17 @@ const Navbar: React.FC = () => {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        {/* Logo with Image */}
+        {/* Logo */}
         <a 
           href="#" 
           onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-          className="flex items-center gap-2 group"
+          className="group"
         >
-          <div className="flex items-center gap-3">
-            {/* Logo Image */}
-            <img 
-              src="/logo.png" 
-              alt="ShalTech Logo" 
-              className="h-10 w-auto transition-transform duration-300 group-hover:scale-110"
-            />
-            
-            {/* Logo Text (Optional - you can keep it or remove it) */}
-            <div className="hidden sm:block">
-              <span className="text-2xl font-display font-bold text-white tracking-tight">
-                Shal<span className="text-primary group-hover:text-secondary transition-colors">Tech</span>
-              </span>
-            </div>
-          </div>
+          <img 
+            src="/logo.png" 
+            alt="ShalTech Logo" 
+            className="h-20 w-40 transition-transform duration-300 group-hover:scale-110"
+          />
         </a>
 
         {/* Desktop Nav */}

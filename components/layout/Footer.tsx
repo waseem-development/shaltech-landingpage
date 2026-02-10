@@ -7,19 +7,14 @@ const Footer: React.FC = () => {
     <footer className="bg-[#050810] border-t border-white/5 pt-20 pb-8">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
-          {/* Brand with Logo */}
+          {/* Logo */}
           <div className="space-y-6">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center">
               <img 
                 src="/logo.png" 
                 alt="ShalTech Logo" 
-                className="h-12 w-auto"
+                className="h-20 w-40"
               />
-              <div>
-                <span className="text-3xl font-display font-bold text-white">
-                  Shal<span className="text-primary">Tech</span>
-                </span>
-              </div>
             </div>
             <p className="text-text-muted max-w-sm">
               Code, Create, and Scale. We are a Quetta-based software startup building modern solutions for a digital world.
@@ -62,7 +57,14 @@ const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-text-dark">
-          <p>© 2026 ShalTech. All rights reserved.</p>
+          <div className="flex items-center gap-2">
+            <img 
+              src="/logo.png" 
+              alt="ShalTech Logo" 
+              className="h-5 w-auto opacity-70 mr-2"
+            />
+            <p>© 2026 ShalTech. All rights reserved.</p>
+          </div>
           <div className="flex items-center gap-2">
             Made with <Heart size={16} className="text-red-500 animate-pulse" /> in Quetta
           </div>
