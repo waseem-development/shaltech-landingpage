@@ -33,19 +33,31 @@ const Navbar: React.FC = () => {
   return (
     <nav 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-background/80 backdrop-blur-md border-b border-white/5 py-4' : 'bg-transparent py-6'
+        isScrolled ? 'bg-background/80 backdrop-blur-md border-b border-white/5 py-3' : 'bg-transparent py-5'
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        {/* Logo */}
+        {/* Logo with Image */}
         <a 
           href="#" 
           onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
           className="flex items-center gap-2 group"
         >
-          <span className="text-2xl font-display font-bold text-white tracking-tight">
-            Shal<span className="text-primary group-hover:text-secondary transition-colors">Tech</span>
-          </span>
+          <div className="flex items-center gap-3">
+            {/* Logo Image */}
+            <img 
+              src="/logo.png" 
+              alt="ShalTech Logo" 
+              className="h-10 w-auto transition-transform duration-300 group-hover:scale-110"
+            />
+            
+            {/* Logo Text (Optional - you can keep it or remove it) */}
+            <div className="hidden sm:block">
+              <span className="text-2xl font-display font-bold text-white tracking-tight">
+                Shal<span className="text-primary group-hover:text-secondary transition-colors">Tech</span>
+              </span>
+            </div>
+          </div>
         </a>
 
         {/* Desktop Nav */}
@@ -81,6 +93,15 @@ const Navbar: React.FC = () => {
           mobileMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full pointer-events-none'
         }`}
       >
+        {/* Mobile Logo */}
+        <div className="absolute top-6 left-6">
+          <img 
+            src="/logo.png" 
+            alt="ShalTech Logo" 
+            className="h-12 w-auto"
+          />
+        </div>
+        
         {NAV_ITEMS.map((item) => (
           <a 
             key={item.label}
