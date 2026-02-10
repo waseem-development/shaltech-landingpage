@@ -61,13 +61,11 @@ const Footer: React.FC = () => {
             <img 
               src="/logo.png" 
               alt="ShalTech Logo" 
-              className="h-5 w-auto opacity-70 mr-2"
+              className="h-14 w-28 w-auto opacity-70 mr-2"
             />
             <p>© 2026 ShalTech. All rights reserved.</p>
           </div>
-          <div className="flex items-center gap-2">
-            Made with <Heart size={16} className="text-red-500 animate-pulse" /> in Quetta
-          </div>
+
         </div>
       </div>
     </footer>

@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
   return (
     <section id="contact" className="py-24 bg-background">
       <div className="container mx-auto px-6 flex">
-        <SectionLabel number="06" label="Get In Touch" />
+        <SectionLabel number="06" />
 
         <div ref={ref} className="flex-1 grid md:grid-cols-2 gap-16">
           {/* Left Info */}

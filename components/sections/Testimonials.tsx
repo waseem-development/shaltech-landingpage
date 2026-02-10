@@ -10,7 +10,7 @@ const Testimonials: React.FC = () => {
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-6 flex">
-        <SectionLabel number="05" label="Client Words" />
+        <SectionLabel number="05" />
 
         <div ref={ref} className="flex-1">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-16">What Our Clients Say</h2>

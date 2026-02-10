@@ -11,7 +11,7 @@ const Projects: React.FC = () => {
   return (
     <section id="projects" className="py-24 bg-surface/30 relative">
       <div className="container mx-auto px-6 flex">
-        <SectionLabel number="04" label="Our Work" />
+        <SectionLabel number="04" />
 
         <div ref={ref} className="flex-1">
           <div className="mb-16">

@@ -17,7 +17,7 @@ const About: React.FC = () => {
   return (
     <section id="about" className="relative py-24 md:py-32 bg-background overflow-hidden">
       <div className="container mx-auto px-6 flex">
-        <SectionLabel number="01" label="About Us" />
+        <SectionLabel number="01" />
         
         <div ref={ref} className="flex-1 grid md:grid-cols-2 gap-16 items-center">
           {/* Left Content */}

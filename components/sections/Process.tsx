@@ -16,7 +16,7 @@ const Process: React.FC = () => {
   return (
     <section id="process" className="py-24 bg-background relative overflow-hidden">
       <div className="container mx-auto px-6 flex">
-        <SectionLabel number="03" label="Our Process" />
+        <SectionLabel number="03" />
 
         <div ref={ref} className="flex-1">
           <div className="relative">

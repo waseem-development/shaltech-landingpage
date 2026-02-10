@@ -12,7 +12,7 @@ const Services: React.FC = () => {
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
       
       <div className="container mx-auto px-6 flex">
-        <SectionLabel number="02" label="What We Do" />
+        <SectionLabel number="02" />
         
         <div ref={ref} className="flex-1">
           <div className="mb-16">
